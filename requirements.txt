@@ -1,0 +1,8 @@
+numpy>=1.0.0
+h5py>=2.10.0
+pandas>=1.0.5
+matplotlib>=3.2.2
+requests>=2.25.0
+pyGEDI
+geopandas
+
