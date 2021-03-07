@@ -3,6 +3,7 @@ FROM python:3.6
 # Copy source code and set working directory
 COPY . /app
 WORKDIR /app
+COPY src/ .
 
 # Install GDAL dependencies
 RUN apt-get update && apt-get install -y libgdal-dev
@@ -18,4 +19,4 @@ RUN pip install -r requirements.txt
 RUN pip install pyGEDI
 
 # Run the CLI app
-CMD ["python", "/app/gedi_app.py"]
+CMD ["python"]
